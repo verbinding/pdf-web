@@ -18,7 +18,7 @@
 
   async function handleSubmit() {
     if (browser) {
-      const response = await fetch('/api/company_enrichment', {
+      const response = await fetch('http://localhost:8000/company_enrichment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
